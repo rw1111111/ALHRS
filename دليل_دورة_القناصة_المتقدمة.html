@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>دليل دورة القناصة المتقدمة</title>
+<style>
+body {
+    font-family: 'Tahoma', sans-serif;
+    background: #111;
+    color: #eee;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    background: linear-gradient(90deg, #000, #222);
+    padding: 40px;
+    text-align: center;
+    border-bottom: 4px solid gold;
+}
+.header h1 {
+    margin: 0;
+    font-size: 38px;
+    color: gold;
+}
+.section {
+    padding: 30px 60px;
+    border-bottom: 1px solid #333;
+}
+.section h2 {
+    color: gold;
+    border-right: 5px solid gold;
+    padding-right: 10px;
+}
+ul {
+    line-height: 2;
+}
+.footer {
+    background: #000;
+    padding: 30px;
+    text-align: center;
+    border-top: 4px solid gold;
+}
+.stamp {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 20px;
+    border: 3px solid red;
+    border-radius: 50%;
+    color: red;
+    font-weight: bold;
+}
+.badge {
+    display: inline-block;
+    padding: 8px 15px;
+    background: gold;
+    color: black;
+    font-weight: bold;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #4CAF50; /* اللون الأخضر الزاهي */
+    color: white;
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #45a049; /* عند التمرير فوق الزر */
+    transform: scale(1.1); /* تكبير الزر عند التمرير */
+}
+
+button:focus {
+    outline: none; /* إزالة الحدود عند التركيز */
+}
+
+#participants-list {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 8px;
+    display: none;
+}
+
+#participants-list li {
+    color: #ddd;
+    font-size: 16px;
+    margin: 5px 0;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <h1>دورة القناصة المتقدمة</h1>
+    <div class="badge">وحدة النخبة التكتيكية</div>
+</div>
+
+<div class="section">
+    <h2>تعريف الدورة</h2>
+    <p>
+    دورة متقدمة مخصصة للعناصر النخبوية داخل القطاع الأمني،
+    تهدف إلى تأهيل الأفراد لاستخدام الأسلحة الثقيلة والتكتيكات الخاصة
+    في الحالات عالية الخطورة والسيطرة الميدانية الكاملة.
+    </p>
+</div>
+
+<div class="section">
+    <h2>شروط الالتحاق</h2>
+    <ul>
+        <li>قراءة القوانين كاملة وفهمها.</li>
+        <li>رتبة رقيب فما فوق.</li>
+        <li>سجل إداري خالي من المخالفات.</li>
+        <li>اجتياز متطلبات الدورة بنجاح.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>الأسلحة المسموحة</h2>
+    <ul>
+        <li>رشاش كاربين.</li>
+        <li>رشاش ثقيل (حسب الحالة).</li>
+        <li>قناص رسمي معتمد.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>المهام الأساسية</h2>
+    <ul>
+        <li>قيادة خط الهجوم الأول والتخطيط.</li>
+        <li>تنفيذ العمليات الخاصة والسريعة.</li>
+        <li>مكافحة الإرهاب وتحرير الرهائن.</li>
+        <li>دعم العمليات عالية الخطورة.</li>
+        <li>فرض الأمن في المناطق غير المستقرة.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>قوانين استخدام الأسلحة الثقيلة</h2>
+    <ul>
+        <li>يسمح بالاستخدام في حالة خلية إرهابية (5 أشخاص فأكثر).</li>
+        <li>يسمح في سرقة البنك المركزي.</li>
+        <li>عند استخدام المجرمين لأسلحة ثقيلة.</li>
+        <li>يمنع الاستخدام العشوائي.</li>
+        <li>يمنع إطلاق النار دون أمر قائد الحالة.</li>
+    </ul>
+</div>
+
+<div class="section">
+    <h2>أسماء المشاركين في الدورة</h2>
+    <button onclick="showParticipants()">عرض الأسماء</button>
+    <ul id="participants-list">
+        <li>[H-032] نواف العنزي</li>
+        <li>[H-031] محمد الحربي</li>
+        <li>[H-002] عبدالله الحربي</li>
+        <li>[H-005] فراس الحربي</li>
+        <li>[H-041] عبدالله العنزي</li>
+        <li>[H-042] محمد العوفي</li>
+        <li>[H-004] فيصل الحربي</li>
+        <!-- يمكنك إضافة المزيد من الأسماء هنا -->
+    </ul>
+</div>
+
+<div class="footer">
+    <p>قائد الدورة: نواف العنزي</p>
+    <p>نائب قائد الدورة: محمد الحربي</p>
+    <div class="stamp">
+        ختم رسمي<br>
+        نواف العنزي
+    </div>
+</div>
+
+<script>
+    function showParticipants() {
+        var list = document.getElementById("participants-list");
+        if (list.style.display === "none" || list.style.display === "") {
+            list.style.display = "block";
+        } else {
+            list.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
